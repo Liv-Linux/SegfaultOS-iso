@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# grab da fonts
+
+TESTEDFONT_URL="https://github.com/microsoft/cascadia-code/releases/download/v2407.24/CascadiaCode-2407.24.zip"
+
+mkdir -p /tmp/fonts/cascadiaCode
+mkdir -p /usr/local/share/fonts/truetype/cascadia-code
+
+wget -O font.zip "$TESTEDFONT_URL"
+
+unzip font.zip
+
+cd font 
+
+cp ttf/*.ttf /usr/local/share/fonts/truetype/cascadia-code
+
+fc-cache -fv
+
+rm -rf /tmp/fonts
+
+

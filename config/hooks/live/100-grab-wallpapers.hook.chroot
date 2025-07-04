@@ -1,0 +1,12 @@
+#!/bin/sh
+
+echo "temp we dont have proper walpapers yet!"
+
+mkdir -p  /usr/share/shit-wallpapers
+
+wget https://w.wallhaven.cc/full/x8/wallhaven-x8zoxo.jpg
+
+cp wallhaven-x8zoxo.jpg /usr/share/shit-wallpapers/temp.png
+
+
+

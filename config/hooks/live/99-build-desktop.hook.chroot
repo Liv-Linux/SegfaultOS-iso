@@ -1,0 +1,52 @@
+#!/bin/bash
+
+set -e
+
+BUILDDIR="/usr/sucksrc"
+
+mkdir -p "$BUILDDIR"
+
+cd "$BUILDDIR"
+
+# build dmenu
+
+git clone https://github.com/Liv-Linux/liv-dmenu.git
+
+cd liv-dmenu
+
+make install clean
+
+cd ..
+
+# make slstatus
+
+git clone https://github.com/Liv-Linux/liv-slstatus.git
+
+cd liv-slstatus
+
+make install clean
+
+cd ..
+
+# make st
+
+git clone https://github.com/Liv-Linux/liv-st-rebase.git
+
+cd liv-st-rebase
+
+make install clean
+
+cd ..
+
+# make dwm
+
+git clone https://github.com/Liv-Linux/liv-dwm.git
+
+cd liv-dwm
+
+make install clean 
+
+cd ..
+
+# done?
+

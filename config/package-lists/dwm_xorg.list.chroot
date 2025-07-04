@@ -1,0 +1,14 @@
+build-essential
+libx11-dev
+libxft-dev
+libxinerama-dev
+pkg-config
+git
+xorg
+xinit
+fonts-dejavu-core
+fonts-terminus
+libimlib2-dev
+clang
+libx11-xcb-dev
+libxcb-res0-dev
